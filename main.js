@@ -35,16 +35,12 @@
             document.getElementById("result").innerHTML = textoDesencriptado;            
         }
         //esta funcion 'copy' me copia el texto del id: result
-        function copyText() {
-            let text = document.getElementById("result").innerText;
+        
+          function copyText() {
+            let text = document.getElementById("result").value;
             navigator.clipboard.writeText(text)
-              .then(() => {
-                console.log('Texto copiado al portapapeles');
-              })
-              .catch((error) => {
-                console.error('Error al copiar el texto: ', error);
-              });
           }
+          
           
         // funcion para limpiar el campo de texto y el texto del result 
         function clearText() {
