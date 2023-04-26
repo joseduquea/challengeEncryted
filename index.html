@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="icon/icon_SSL.png">
+    <title>Text Encryptor</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <h1>Text Encryptor</h1>
+    <main> 
+         <!--input-->
+		<div class="input-column">
+			<textarea placeholder="Digita aqui el texto, solo minusculas y sin acentos" y " id="text" ></textarea>
+		</div>
+
+        <!--botones Encryted-->
+		<div class="buttons-column">
+			<button class="btn" onclick="encriptarText()">Encriptar</button>
+			<button class="btn" onclick="desencriptarText()">Desencriptar </button>
+		</div>
+
+        <!--result text Encryted-->
+		<div class="text-result-column">			
+				<textarea disabled placeholder="Resultado" id="result"></textarea>
+		</div>
+
+        <!--botones clear and copy-->
+        <div class="buttons-column2">
+            <button class="btn" onclick="clearText()">Limpiar</button>
+			<button class="btn" onclick="copyText()" >Copiar</button>
+        </div>
+	</main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <ul>
+                <li class="icons"> 
+                    <a href="https://www.linkedin.com/in/joseduquea/ " target="_blank" title="Follow me on Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/joseduquea" target="_blank" title="Follow me on Git Hub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/joseduquea" target="_blank" title="Follow me on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
