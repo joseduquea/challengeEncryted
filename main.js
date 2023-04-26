@@ -34,14 +34,6 @@
             let textoDesencriptado = desencriptar(text);
             document.getElementById("result").innerHTML = textoDesencriptado;            
         }
-
-        //esta funcion 'copy' me copia el texto del id: result
-        /*function copyText() {
-        let text = document.getElementById("result");
-        text.select();
-        document.execCommand("copy");
-        }*/
-
         //esta funcion 'copy' me copia el texto del id: result
         function copyText() {
             let text = document.getElementById("result").innerText;
