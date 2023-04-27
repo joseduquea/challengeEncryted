@@ -77,7 +77,7 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  width: auto;
+  width: 100%;
   height: auto;
   background: #333;
   padding: 2.12rem;
@@ -102,7 +102,7 @@ textarea {
   .icons i {
   font-size: 25px;
   } 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     .columna1, .columna2 {
       width: 100%;
       float: none;
@@ -118,14 +118,17 @@ textarea {
       font-size: 12px;
       margin: 20px 5px;
       }
-      .footer {
-        width: 100%;
-        margin-bottom: -700px; 
-        padding: 30px;
-      }
+    .footer {
+    position: static;
+    width: 100%;
+    height: auto;
+    background: #333;
+    padding: 1rem;
+    text-align: center;
+  }
     }
   
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   h1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -151,8 +154,11 @@ textarea {
     margin: 20px 5px;
     }
     .footer {
-      width: 100%;
-      margin-bottom: auto; 
-      padding: 20px;
-    }
+    position: static;
+    width: 100%;
+    height: auto;
+    background: #333;
+    padding: 1rem;
+    text-align: center;
+  }
 }
